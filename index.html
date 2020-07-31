@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="Calculator">
+        <form name="calculator">
+            <h1>Welcome to online Calculator</h1>
+            <input type="text" name="display" class="form-control main-bar"  placeholder="0">
+            <hr>
+            <div class="button-area">
+                <div class="line">
+                    <input type="button" name="button" value="sin" class="btn data-operation" onclick="fnSin()">
+                    <input type="button" name="button" value="cos" class="btn data-operation"onclick="fnCos()">
+                    <input type="button" name="button" value="tan" class="btn data-operation"onclick="fnTan()">
+                    <input type="button" name="button" value="&radic;" class="btn data-operation" onclick = "root()">
+                </div>
+                <div class="line">
+                    <input type="button" name="button" value="AC" class="btn data-all-clear" onclick = "allClear()">
+                    <input type="button" name="button" value="DEL" class="btn data-delete" onclick = "Delete()">
+                    <input type="button" name="button" value="π" class="btn data-operation"onclick="myclick('3.1416')">
+                    <input type="button" name="button" value="+" class="btn data-operation"onclick="myclick('+')">
+                </div>
+                <div class="line">
+                    <input type="button" name="button" value="7" class="btn data-number" onclick="myclick('7')">
+                    <input type="button" name="button" value="8" class="btn data-number"onclick="myclick('8')">
+                    <input type="button" name="button" value="9" class="btn data-number"onclick="myclick('9')">
+                    <input type="button" name="button" value="-" class="btn data-operation"onclick="myclick('-')">
+                </div>
+                <div class="line">
+                    <input type="button" name="button" value="4" class="btn data-number"onclick="myclick('4')">
+                    <input type="button" name="button" value="5" class="btn data-number"onclick="myclick('5')">
+                    <input type="button" name="button" value="6" class="btn data-number"onclick="myclick('6')">
+                    <input type="button" name="button" value="×" class="btn data-operation"onclick="myclick('*')">
+                </div>
+                <div class="line">
+                    <input type="button" name="button" value="1" class="btn data-number"onclick="myclick('1')">
+                    <input type="button" name="button" value="2" class="btn data-number"onclick="myclick('2')">
+                    <input type="button" name="button" value="3" class="btn data-number"onclick="myclick('3')">
+                    <input type="button" name="button" value="÷" class=" btn data-operation"onclick="myclick('/')">
+                </div>
+                <div class="line">
+                    <input type="button" name="button" value="." class="btn data-operation"onclick="myclick('.')">
+                    <input type="button" name="button" value="0" class="btn data-number"onclick="myclick('0')">
+                    <input type="button" name="button" value="00" class="btn data-number"onclick="myclick('00')">
+                    <input type="button" name="button" value="=" class="btn data-number"onclick="eualot()">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
